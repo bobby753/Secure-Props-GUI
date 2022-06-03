@@ -1,18 +1,15 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This application is useful for encrypting and decrypting Strings and .yaml files using SecureProperties.jar 
 
-## Folder Structure
+## Additional Functionalities
 
-The workspace contains two folders by default, where:
+* Copy to clipboard when clicked on output box.
+* Text gets selected automatically when clicked on input box.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+##Credits
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- GUI  generated using `GuiGenie`  
+- Toast Notification [Stackoverflow](https://stackoverflow.com/a/24716231)  
+- Git Ignore [Gist File](https://gist.github.com/dedunumax/54e82214715e35439227) 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).

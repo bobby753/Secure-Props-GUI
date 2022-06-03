@@ -59,7 +59,7 @@ public class Toast {
 
     public static void showToast(JComponent component, String message)
     {
-        new Toast(component, null, message, 1000/*Default 2 Sec*/);
+        new Toast(component, null, message, 1000/*Default 1 Sec*/);
     }
 
     public static void showToast(JComponent component, String message, Point location, long forDuration)
