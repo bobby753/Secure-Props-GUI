@@ -4,11 +4,26 @@ This application is useful for encrypting and decrypting Strings and .yaml files
 
 ## Build
 
-To build this project secure properties.jar is required.
+To build this project secure properties.jar is required.  
+Either specify it in `%CLASSPATH%` env variable or use cmdline arg. 
+
+```
+javac -d . Toast.java  
+javac -d . -cp .\secure-properties-tool.jar;. Gui.java  
+```
 
 ## Run
 
-To run this download the executable from releases [here](https://github.com/bobby753/Secure-Props-GUI/releases/) 
+To run this download the executable from releases [here](https://github.com/bobby753/Secure-Props-GUI/releases/)  
+
+<p align="center">
+    <strong>OR</strong>
+</p>
+
+
+```
+java -cp .\secure-properties-tool.jar;. gui/Gui 
+```
 
 ## Additional Functionalities
 
