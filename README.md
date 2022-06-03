@@ -2,7 +2,13 @@
 
 This application is useful for encrypting and decrypting Strings and .yaml files using SecureProperties.jar 
 
+## Build
 
+To build this project secure properties.jar is required.
+
+## Run
+
+To run this download the executable from releases [here](https://github.com/bobby753/Secure-Props-GUI/releases/) 
 
 ## Additional Functionalities
 
