@@ -16,7 +16,7 @@ import com.mulesoft.tools.SecurePropertiesTool;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Clipboard;
 
-public class gui extends JPanel implements ActionListener {
+public class Gui extends JPanel implements ActionListener {
 	private JLabel string_label;
 	private JLabel input_label;
 	private JTextField input_string;
@@ -47,7 +47,7 @@ public class gui extends JPanel implements ActionListener {
 	
 	private SecurePropertiesTool sp_tool = new SecurePropertiesTool();
 
-	public gui() {
+	public Gui() {
 		// construct preComponents
 		String[] alg_comboItems = { "AES", "Blowfish", "DES", "DESede", "RC2", "RCA" };
 		String[] mode_comboItems = { "CBC", "CFB", "ECB", "OFB" };
@@ -137,7 +137,7 @@ public class gui extends JPanel implements ActionListener {
 				String out_text = output_box.getText();
 				StringSelection stringSelection = new StringSelection(out_text.toString());
 				clpbrd.setContents(stringSelection, null);
-				if (!out_text.isBlank())
+				if (!(out_text.isEmpty() || out_text.toString().equals(" ")))
 					Toast.showToast(output_box, "   Copied to Clipboard !!", null, 800);
 
 			}
@@ -223,7 +223,7 @@ public class gui extends JPanel implements ActionListener {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Secure Props GUI");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().add(new gui());
+		frame.getContentPane().add(new Gui());
 		frame.pack();
 		frame.setVisible(true);
 		
